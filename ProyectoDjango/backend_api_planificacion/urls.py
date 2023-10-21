@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('disponibilidad.urls')),
     path('', include('planificacion.urls')),
     path('', include('auditoria.urls')),
+    path('', include('core.urls')),
 ]

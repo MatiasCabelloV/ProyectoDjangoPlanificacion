@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'coreapi',
     'disponibilidad',
     'planificacion',
-    'auditoria'
+    'auditoria',
+    'core'
 ]
 
 MIDDLEWARE = [
