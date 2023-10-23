@@ -12,7 +12,7 @@ class Profesor(models.Model):
     departamento = models.CharField(max_length=45)
     jornada = models.CharField(max_length=45)
     #Tipo adjunto o regular
-    tipo = models.CharField(max_length=45)
+    tipo = models.CharField(max_length=45, default="")
     horarioDiurno = models.CharField(max_length=250, default=diurno)
     horarioVespertino = models.CharField(max_length=250, default=vespertino)
 
