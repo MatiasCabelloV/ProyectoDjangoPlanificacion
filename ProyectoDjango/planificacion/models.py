@@ -14,6 +14,9 @@ class Curso(models.Model):
     Curso = models.CharField(max_length=255)
     nombreAsignatura = models.CharField(max_length=255)
 
+    def __str__ (self):
+        return self.nombreAsignatura
+
 """
 class HorarioCurso(models.Model):
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
