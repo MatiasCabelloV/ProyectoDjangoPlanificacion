@@ -30,4 +30,3 @@ class PlanificacionAcademica(models.Model):
     jornada = models.CharField(max_length=255)
     fechaInicio = models.DateField()
     fechaFin = models.DateField()
-
