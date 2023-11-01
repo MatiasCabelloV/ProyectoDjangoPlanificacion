@@ -15,8 +15,3 @@ class CursoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Curso
         fields = '__all__'
-
-class HorarioSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = HorarioCurso
-        fields = '__all__'

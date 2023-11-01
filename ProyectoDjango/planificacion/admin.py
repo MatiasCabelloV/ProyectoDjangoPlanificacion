@@ -5,4 +5,3 @@ from .models import *
 admin.site.register(SecretarioAcademico)
 admin.site.register(PlanificacionAcademica)
 admin.site.register(Curso)
-admin.site.register(HorarioCurso)

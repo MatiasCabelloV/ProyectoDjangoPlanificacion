@@ -15,7 +15,3 @@ class PlanificacionAcademicaSeri(viewsets.ModelViewSet):
 class CursoSeri(viewsets.ModelViewSet):
     serializer_class = CursoSerializer
     queryset = Curso.objects.all()
-
-class HorarioSeri(viewsets.ModelViewSet):
-    serializer_class = HorarioSerializer
-    queryset = HorarioCurso.objects.all()
