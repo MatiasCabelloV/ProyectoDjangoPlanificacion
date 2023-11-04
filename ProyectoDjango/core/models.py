@@ -8,3 +8,9 @@ class UserData(models.Model):
     cargo = models.CharField(max_length=45, default="")
         #Tipo adjunto o regular
     tipo_cargo = models.CharField(max_length=45, default="")
+
+class Admin(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__ (self):
+        return self.user

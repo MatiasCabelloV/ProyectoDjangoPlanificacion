@@ -12,3 +12,7 @@ class UserSeri(viewsets.ModelViewSet):
 class UsuarioSeri(viewsets.ModelViewSet):
     serializer_class = UsuarioSerializer
     queryset = UserData.objects.all()
+
+class AdminSeri(viewsets.ModelViewSet):
+    serializer_class = AdminSerializer
+    queryset = Admin.objects.all()
