@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from planificacion.models import PlanificacionAcademica
+from planificacion.models import Curso
 
 diurno = "[[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]]"
 vespertino = "[[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]]"
@@ -19,4 +19,4 @@ class Profesor(models.Model):
 
 class ProfesorCurso(models.Model):
     profesor = models.ForeignKey(Profesor, on_delete=models.CASCADE)
-    planificacionAcademica = models.ForeignKey(PlanificacionAcademica, on_delete=models.CASCADE, default='')
+    Curso = models.ForeignKey(Curso, on_delete=models.CASCADE, default='')
