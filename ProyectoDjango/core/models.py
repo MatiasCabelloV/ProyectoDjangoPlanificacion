@@ -5,8 +5,9 @@ from django.contrib.auth.models import User
 class UserData(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     rut = models.CharField(max_length=45)
+    #Cargo mas alto
     cargo = models.CharField(max_length=45, default="")
-        #Tipo adjunto o regular
+    #adjunto o regular
     tipo_cargo = models.CharField(max_length=45, default="")
 
 class Admin(models.Model):
