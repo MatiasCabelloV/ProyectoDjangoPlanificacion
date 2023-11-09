@@ -14,7 +14,7 @@ class AuditoriaSeri(viewsets.ModelViewSet):
 
 from django.contrib.auth import authenticate
 
-user = authenticate(username="e.guiezsanmartin@uandresbello.edu", password="166749239!")
+user = authenticate(username="o.salinassilva@uandresbello.edu", password="116220792!")
 
 if user is not None:
     print('CORRECTO')
