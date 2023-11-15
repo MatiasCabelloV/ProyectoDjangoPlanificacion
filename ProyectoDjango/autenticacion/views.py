@@ -26,7 +26,7 @@ def loginSecretario(request):
     if not user.check_password(request.data['password']):
         return Response("missing user", status=status.HTTP_404_NOT_FOUND)
     serializer = UserSerializer(user)
-    if not 1 in serializer.data['groups']:
+    if 2 in serializer.data['groups']:
         print('es secretario valido')
         return Response({'user': serializer.data}, status=status.HTTP_200_OK)
     return Response(status=status.HTTP_401_UNAUTHORIZED)
